@@ -1,0 +1,2 @@
+{% extends 'todo_app/base.html' %} {% block content %} <ul>{% for todo in todos %}
+<li>{{todo.title }}- {{ todo.datecompleted|date:"M j Y H:i" }}</li> {% endfor %} </ul>{% endblock %}
