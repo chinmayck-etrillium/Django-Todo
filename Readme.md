@@ -7,7 +7,9 @@ As the todo management is secure, only the authenticated and authorized user can
 
 1. Clone the repository
 2. Create a python virtual environment by running script
-   `bash python -m venv venv-name`
+   ```properties 
+        python -m venv venv-name
+        ```
 3. Activate the venv
    `bash venv/Scripts/activate`
 4. Install django in the virtual environment
