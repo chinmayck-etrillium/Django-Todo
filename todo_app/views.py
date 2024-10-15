@@ -21,7 +21,7 @@ def signupuser(request):
                 user=User.objects.create_user(request.POST['username'],password=request.POST['password1'])
                 user.save()
                 login(request,user)
-                return redirect('todo')
+                return redirect('home')
                 
             except IntegrityError:
                 return render(request,'todo_app/signup.html',{"form":UserCreationForm() ,"error":"Username already exists!"})
